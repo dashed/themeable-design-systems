@@ -7,9 +7,11 @@ import ReactDOM from 'react-dom';
 
 // local imports
 
-import App from './app/index';
+import App, { Foo } from './app/index';
 
 // render the app
+
+console.log(App.__docgenInfo);
 
 const mount = document.getElementById('root');
 
