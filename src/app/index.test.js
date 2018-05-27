@@ -1,6 +1,13 @@
+// 3rd-party imports
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+
+// components
+
+import App from './index';
+
+// tests
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
