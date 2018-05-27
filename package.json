@@ -11,12 +11,13 @@
     "react-scripts": "1.1.4"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": [
+    "src/**/*.{js,jsx,json,css,md}": [
       "prettier --single-quote --write",
       "git add"
     ]
   },
   "scripts": {
+    "pretty": "prettier --single-quote --write 'src/**/*.{js,jsx,json,css,md}'",
     "precommit": "lint-staged",
     "start": "react-scripts start",
     "build": "react-scripts build",
