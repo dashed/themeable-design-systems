@@ -1,3 +1,5 @@
+// @flow
+
 // 3rd-party imports
 
 import React from 'react';
@@ -9,4 +11,8 @@ import App from './app/index';
 
 // render the app
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const mount = document.getElementById('root');
+
+if (mount) {
+  ReactDOM.render(<App />, mount);
+}
