@@ -27,10 +27,17 @@
     "noflow": "cd src/;flow-annotation-check --list-files=noflow"
   },
   "devDependencies": {
+    "babel-plugin-module-resolver": "^3.1.1",
     "babel-plugin-react-docgen": "^1.9.0",
     "flow-annotation-check": "^1.8.1",
     "flow-bin": "^0.73.0",
     "react-app-rewired": "^1.5.2"
+  },
+  "jest": {
+    "moduleDirectories": ["node_modules", "<rootDir>/src"],
+    "moduleNameMapper": {
+      "^~/(.*)": "<rootDir>/src/$1"
+    }
   },
   "peerDependencies": {
     "jest": "20.x"

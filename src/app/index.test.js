@@ -7,7 +7,7 @@ import ReactDOM from 'react-dom';
 
 // components
 
-import App from './index';
+import App from '~/app/index';
 
 // tests
 
